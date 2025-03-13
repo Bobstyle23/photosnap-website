@@ -1,0 +1,3 @@
+# Photosnap Website
+
+!(./preview.jpg)
