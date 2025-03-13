@@ -1,3 +1,3 @@
 # Photosnap Website
 
-!(./preview.jpg)
+![Design preview for the Photosnap Website](./preview.jpg)
