@@ -1,0 +1,38 @@
+.btn {
+  @extend %button-style;
+  transition: all 0.2s ease-in;
+
+  &--black {
+    background-color: $color-black;
+  }
+
+  &--white {
+    background-color: $color-white;
+  }
+
+  &--white,
+  &__link {
+    color: $color-black;
+  }
+
+  &--black,
+  &--white {
+    &:hover {
+      background-color: $color-light-grey;
+      color: $color-black;
+    }
+  }
+
+  &__link {
+    @extend %flexbox;
+    gap: 1.6rem;
+
+    &--white {
+      color: $color-white;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,3 +1,13 @@
 $breakpoint-tablets: "(min-width: 48em)";
 $breakpoint-large-tablets: "(min-width: 64em)";
 $breakpoint-desktops: "(min-width: 75em)";
+
+$color-black: #000;
+$color-light-grey: #dfdfdf;
+$color-white: #fff;
+$color-main: linear-gradient(
+  33deg,
+  rgba(255, 197, 147, 1) 0%,
+  rgba(188, 113, 152, 1) 52%,
+  rgba(90, 119, 255) 100%
+);

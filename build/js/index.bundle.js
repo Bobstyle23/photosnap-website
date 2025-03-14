@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector(".navigation"),n=document.querySelector(".menu__btn--open"),t=document.querySelector(".menu__btn--close"),o=o=>{e.style.top=o?"7.2rem":"-100rem",n.style.display=o?"none":"block",t.style.display=o?"block":"none"};n.addEventListener("click",(()=>o(!0))),t.addEventListener("click",(()=>o(!1)))})();
