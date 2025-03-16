@@ -1,27 +1,33 @@
 .header {
-  @extend %flexbox;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  @extend %grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
   max-width: 111rem;
   margin-inline: auto;
   padding: 2.8rem 2.4rem;
+  min-height: 7.2rem;
 }
 
 .menu__btn {
+  &--open,
   &--close {
+    justify-self: end;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .header {
+    grid-template-columns: max-content auto min-content;
+    padding: 1.6rem 4rem;
+  }
+
+  .menu__btn {
     display: none;
   }
 }
 
-/* @include respond-to($breakpoint-tablets) { */
-/*   .header { */
-/*     padding: 1.6rem 4rem; */
-/*     margin-right: auto; */
-/*   } */
-/**/
-/*   .menu__btn { */
-/*     &--open { */
-/*       display: none; */
-/*     } */
-/*   } */
-/* } */
+@include respond-to($breakpoint-desktops) {
+  .header {
+    padding-inline: 0;
+  }
+}

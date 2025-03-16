@@ -2,11 +2,16 @@ const navigation = document.querySelector(".navigation");
 const hamburgerMenu = document.querySelector(".menu__btn--open");
 const closeMenu = document.querySelector(".menu__btn--close");
 
-const toggleMenu = (isOpen) => {
-  navigation.style.top = isOpen ? "7.2rem" : "-100rem";
-  hamburgerMenu.style.display = isOpen ? "none" : "block";
-  closeMenu.style.display = isOpen ? "block" : "none";
+const toggleMenu = () => {
+  hamburgerMenu.classList.toggle("hidden");
+  closeMenu.classList.toggle("hidden");
 };
 
-hamburgerMenu.addEventListener("click", () => toggleMenu(true));
-closeMenu.addEventListener("click", () => toggleMenu(false));
+hamburgerMenu.addEventListener("click", () => {
+  navigation.style.top = "7.2rem";
+  toggleMenu();
+});
+closeMenu.addEventListener("click", () => {
+  navigation.style.top = "-100%";
+  toggleMenu();
+});
