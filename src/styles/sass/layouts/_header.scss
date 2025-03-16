@@ -1,56 +1,27 @@
 .header {
   @extend %flexbox;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   max-width: 111rem;
   margin-inline: auto;
   padding: 2.8rem 2.4rem;
 }
 
-.navigation {
-  width: 100%;
-  height: auto;
-  padding: 3.2rem;
-  background-color: $color-white;
-  position: absolute;
-  right: 0;
-  top: -100rem;
-  transition: top 0.4s ease-in-out;
-}
-
-.navigation__list {
-  @extend %flexbox;
-  gap: 2rem;
-
-  &--item a {
-    font-size: 1.5rem;
-    letter-spacing: 0.25rem;
-    color: $color-black;
-    text-transform: uppercase;
-
-    &:hover {
-      opacity: 0.3;
-    }
-  }
-
-  &--line {
-    width: 100%;
-    height: 1px;
-    background-color: $color-black;
-    opacity: 0.25;
-    margin-block-end: 2rem;
-  }
-}
-
-.btn {
-  width: 100%;
-  height: 4.8rem;
-  font-size: 1.5rem;
-  letter-spacing: 0.25rem;
-}
-
 .menu__btn {
   &--close {
     display: none;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .header {
+    padding: 1.6rem 4rem;
+    margin-right: auto;
+  }
+
+  .menu__btn {
+    &--open {
+      display: none;
+    }
   }
 }
