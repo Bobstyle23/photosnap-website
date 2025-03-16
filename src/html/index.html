@@ -9,22 +9,143 @@
   <body>
     <!-- @@include('./components/hero-section-bullets/hero.html') -->
     @@include("./header.html")
+    <main class="main">
+      <section class="section section__create">
+        <article>
+          <h1>Create and share your photo stories.</h1>
+          <p>
+            Photosnap is a platform for photographers and visual storytellers.
+            We make it easy to share photos, tell stories and connect with
+            others.
+          </p>
+          <a href="#" class="btn btn__link btn__link--white"
+            >Get an invite
+            <svg class="icon icon__arrow icon__arrow--white">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+          ></a>
+        </article>
+        <picture>
+          <source
+            srcset="
+              ./img/home/desktop/create-and-share.webp,
+              ./img/home/desktop/create-and-share@2x.webp 2x,
+              ./img/home/desktop/create-and-share@3x.webp 3x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
 
-    <!-- <a href="#" class="btn btn--black">Button 1</a> -->
-    <!-- <a href="#" class="btn btn--white">Button 3</a> -->
-    <!-- <a href="#" class="btn btn__link btn__link--black" -->
-    <!--   >Button 2 -->
-    <!--   <svg class="icon icon__arrow icon__arrow--black"> -->
-    <!--     <use href="./img/svgsprite/sprite.symbol.svg#arrow" /> -->
-    <!--   </svg> -->
-    <!-- </a> -->
-    <!---->
-    <!-- <a href="#" class="btn btn__link btn__link--white" -->
-    <!--   >Button 2 -->
-    <!--   <svg class="icon icon__arrow icon__arrow--black"> -->
-    <!--     <use href="./img/svgsprite/sprite.symbol.svg#arrow" /> -->
-    <!--   </svg> -->
-    <!-- </a> -->
+          <source
+            srcset="
+              ./img/home/tablet/create-and-share-tablet.webp,
+              ./img/home/tablet/create-and-share-tablet@2x.webp 2x,
+              ./img/home/tablet/create-and-share-tablet@3x.webp 3x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            src="./img/home/mobile/create-and-share-mobile.webp"
+            srcset="
+              ./img/home/mobile/create-and-share-mobile@2x.webp 2x,
+              ./img/home/mobile/create-and-share-mobile@3x.webp 3x
+            "
+            alt=""
+          />
+        </picture>
+      </section>
+
+      <section class="section section__beautiful">
+        <picture>
+          <source
+            srcset="
+              ./img/home/desktop/beautiful-stories.webp,
+              ./img/home/desktop/beautiful-stories@2x.webp 2x,
+              ./img/home/desktop/beautiful-stories@3x.webp 3x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./img/home/tablet/beautiful-stories-tablet.webp,
+              ./img/home/tablet/beautiful-stories-tablet@2x.webp 2x,
+              ./img/home/tablet/beautiful-stories-tablet@3x.webp 3x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            src="./img/home/mobile/beautiful-stories-mobile.webp"
+            srcset="
+              ./img/home/mobile/beautiful-stories-mobile@2x.webp 2x,
+              ./img/home/mobile/beautiful-stories-mobile@3x.webp 3x
+            "
+            alt=""
+          />
+        </picture>
+
+        <article>
+          <h1>Beautiful stories every time</h1>
+          <p>
+            We provide design templates to ensure your stories look terrific.
+            Easily add photos, text, embed maps and media from other networks.
+            Then share your story with everyone.
+          </p>
+          <a href="#" class="btn btn__link btn__link--black"
+            >View the stories
+            <svg class="icon icon__arrow icon__arrow--black">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+          ></a>
+        </article>
+      </section>
+      <section class="section section__designed">
+        <article>
+          <h1>Designed for everyone</h1>
+          <p>
+            Photosnap can help you create stories that resonate with your
+            audience. Our tool is designed for photographers of all levels,
+            brands, businesses you name it.
+          </p>
+          <a href="#" class="btn btn__link btn__link--black"
+            >View the stories
+            <svg class="icon icon__arrow icon__arrow--black">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+          ></a>
+        </article>
+
+        <picture>
+          <source
+            srcset="
+              ./img/home/desktop/designed-for-everyone.webp,
+              ./img/home/desktop/designed-for-everyone@2x.webp 2x,
+              ./img/home/desktop/designed-for-everyone@3x.webp 3x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./img/home/tablet/designed-for-everyone-tablet.webp,
+              ./img/home/tablet/designed-for-everyone-tablet@2x.webp 2x,
+              ./img/home/tablet/designed-for-everyone-tablet@3x.webp 3x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            src="./img/home/mobile/designed-for-everyone-mobile.webp"
+            srcset="
+              ./img/home/mobile/designed-for-everyone-mobile@2x.webp 2x,
+              ./img/home/mobile/designed-for-everyone-mobile@3x.webp 3x
+            "
+            alt=""
+          />
+        </picture>
+      </section>
+    </main>
 
     <script src="./js/index.bundle.js"></script>
   </body>
