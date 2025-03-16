@@ -43,35 +43,35 @@
   letter-spacing: 0.25rem;
 }
 
-@include respond-to($breakpoint-tablets) {
-  .navigation {
-    position: static;
-    padding: 0;
-  }
-
-  .navigation__list {
-    justify-content: flex-end;
-    flex-flow: row nowrap;
-    gap: 3.7rem;
-
-    &--item {
-      a:link,
-      a:visited {
-        font-size: 1.2rem;
-        letter-spacing: 0.2rem;
-      }
-    }
-
-    &--line {
-      display: none;
-    }
-  }
-
-  .btn {
-    width: 15.8rem;
-    height: 4rem;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    margin-left: 1.5rem;
-  }
-}
+/* @include respond-to($breakpoint-tablets) { */
+/*   .navigation { */
+/*     position: static; */
+/*     padding: 0; */
+/*   } */
+/**/
+/*   .navigation__list { */
+/*     justify-content: flex-end; */
+/*     flex-flow: row nowrap; */
+/*     gap: 3.7rem; */
+/**/
+/*     &--item { */
+/*       a:link, */
+/*       a:visited { */
+/*         font-size: 1.2rem; */
+/*         letter-spacing: 0.2rem; */
+/*       } */
+/*     } */
+/**/
+/*     &--line { */
+/*       display: none; */
+/*     } */
+/*   } */
+/**/
+/*   .btn { */
+/*     width: 15.8rem; */
+/*     height: 4rem; */
+/*     font-size: 1.2rem; */
+/*     letter-spacing: 0.2rem; */
+/*     margin-left: 1.5rem; */
+/*   } */
+/* } */
