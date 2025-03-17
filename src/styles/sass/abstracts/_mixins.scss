@@ -10,3 +10,24 @@
   line-height: $height;
   letter-spacing: $spacing;
 }
+
+@mixin decoration($direction, $width, $height, $rotate: 0) {
+  width: $width;
+  height: $height;
+  background: linear-gradient(
+    $direction,
+    rgba(255, 197, 147, 1) 0%,
+    rgba(188, 113, 152, 1) 52%,
+    rgba(90, 119, 255, 1) 100%
+  );
+  rotate: $rotate;
+}
+
+@mixin icon($icon, $gradient) {
+  mask: url($icon) no-repeat center;
+  -webkit-mask: url($icon) no-repeat center;
+
+  &:hover {
+    background: $gradient;
+  }
+}

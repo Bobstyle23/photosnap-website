@@ -28,4 +28,54 @@
       height: 1.5rem;
     }
   }
+
+  &__feature {
+    fill: #000;
+  }
+
+  &__footer {
+    width: 2rem;
+    height: 2rem;
+    background: #000;
+
+    &--facebook {
+      @include icon(
+        "../../../img/svgicons/facebook.svg",
+        linear-gradient(45deg, rgba(#63afdb, 1) 0%, rgba(#6028f1, 1) 100%)
+      );
+    }
+
+    &--youtube {
+      @include icon(
+        "../../../img/svgicons/youtube.svg",
+        linear-gradient(45deg, rgba(#d3205a, 1) 0%, rgba(#ff5a5a, 1) 100%)
+      );
+    }
+
+    &--twitter {
+      @include icon(
+        "../../../img/svgicons/twitter.svg",
+        linear-gradient(45deg, rgba(#65ffeb, 1) 0%, rgba(#27718a, 1) 100%)
+      );
+    }
+
+    &--pinterest {
+      @include icon(
+        "../../../img/svgicons/pinterest.svg",
+        linear-gradient(45deg, rgba(#f6c683, 1) 0%, rgba(#de3838, 1) 100%)
+      );
+    }
+
+    &--instagram {
+      @include icon(
+        "../../../img/svgicons/instagram.svg",
+        linear-gradient(
+          45deg,
+          rgba(#ffc593, 1) 0%,
+          rgba(#bc7198, 1) 52%,
+          rgba(#5a77ff, 1) 100%
+        )
+      );
+    }
+  }
 }
