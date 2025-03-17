@@ -2,6 +2,8 @@
   @extend %grid;
   row-gap: 5.6rem;
   padding: 8rem 3.2rem;
+  max-width: 111rem;
+  margin-inline: auto;
 
   article {
     @extend %flexbox;
@@ -24,5 +26,34 @@
     color: $color-black;
     opacity: 0.6;
     text-align: center;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .section__features {
+    row-gap: 8rem;
+    padding: 12rem 15.5rem;
+  }
+}
+
+@include respond-to($breakpoint-large-tablets) {
+  .section__features {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 3.2rem;
+    column-gap: 3rem;
+    row-gap: 0;
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .section__features {
+    padding-inline: 0;
+
+    article {
+      display: grid;
+      place-items: center;
+      grid-template-rows: subgrid;
+      grid-row: span 3;
+    }
   }
 }
