@@ -1,0 +1,28 @@
+.section__features {
+  @extend %grid;
+  row-gap: 5.6rem;
+  padding: 8rem 3.2rem;
+
+  article {
+    @extend %flexbox;
+  }
+
+  i {
+    margin-block-end: 4.8rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-block-end: 1.6rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: $color-black;
+    opacity: 0.6;
+    text-align: center;
+  }
+}
