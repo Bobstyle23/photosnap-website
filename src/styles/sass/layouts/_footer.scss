@@ -36,14 +36,50 @@
     }
   }
 
-  .btn {
+  &__btn {
     justify-self: center;
     margin-block-end: 3.4rem;
+    padding: 0;
+    width: 16.8rem;
+    height: 1.6rem;
   }
 
   small {
     font-weight: 400;
     opacity: 50.25%;
     font-size: 1.5rem;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6.4rem 4rem;
+    place-items: start;
+    row-gap: 3.2rem;
+
+    & * {
+      margin-block-end: 0;
+    }
+
+    &__navigation-list {
+      flex-flow: row nowrap;
+      gap: 2.6rem;
+      margin-block-end: 4rem;
+    }
+
+    &__btn {
+      grid-area: 1 / 2;
+      justify-self: end;
+    }
+
+    &__logos {
+      grid-row: 3;
+    }
+
+    small {
+      grid-area: 3 / 2;
+      justify-self: end;
+    }
   }
 }
