@@ -1,0 +1,91 @@
+.beta {
+  position: relative;
+  background-image: image-set(
+    url("../../../img/shared/mobile/bg-beta-mobile.webp") 1x,
+    url("../../../img/shared/mobile/bg-beta-mobile@2x.webp") 2x,
+    url("../../../img/shared/mobile/bg-beta-mobile@3x.webp") 3x
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 28rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3.2rem;
+    width: 12.8rem;
+    height: 0.6rem;
+    background: linear-gradient(
+      90deg,
+      rgba(#ffc593, 1) 0%,
+      rgba(#bc7198, 1) 52%,
+      rgba(#5a77ff, 1) 100%
+    );
+    rotate: 180deg;
+  }
+
+  &__content {
+    @extend %flexbox;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.4rem;
+    max-width: 111rem;
+    margin-inline: auto;
+    padding-block: 6.4rem;
+    padding-inline: 3.2rem;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    line-height: 1.25;
+    letter-spacing: 0.333rem;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  @include respond-to($breakpoint-tablets) {
+    &__content {
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 6.8rem;
+      padding-inline: 4rem;
+    }
+
+    &__title {
+      font-size: 4rem;
+      line-height: 1.2;
+      letter-spacing: 0.417rem;
+      max-width: 40rem;
+      text-wrap: auto;
+    }
+
+    &::before {
+      left: 0;
+      width: 0.6rem;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(#ffc593, 1) 0%,
+        rgba(#bc7198, 1) 52%,
+        rgba(#5a77ff, 1) 100%
+      );
+    }
+
+    background-image: image-set(
+      url("../../../img/shared/tablet/bg-beta-tablet.webp") 1x,
+      url("../../../img/shared/tablet/bg-beta-tablet@2x.webp") 2x,
+      url("../../../img/shared/tablet/bg-beta-tablet@3x.webp") 3x
+    );
+  }
+
+  @include respond-to($breakpoint-large-tablets) {
+    background-image: image-set(
+      url("../../../img/shared/desktop/bg-beta.webp") 1x,
+      url("../../../img/shared/desktop/bg-beta@2x.webp") 2x,
+      url("../../../img/shared/desktop/bg-beta@3x.webp") 3x
+    );
+  }
+}
