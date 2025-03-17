@@ -1,0 +1,49 @@
+.footer {
+  @extend %grid;
+  background-color: $color-black;
+  padding: 5.6rem 3.2rem;
+  color: $color-white;
+
+  &__logo {
+    margin-block-end: 3.2rem;
+  }
+
+  &__logos {
+    @extend %flexbox;
+    flex-flow: row nowrap;
+    gap: 1.4rem;
+    margin-block-end: 5rem;
+  }
+
+  &__navigation-list {
+    @extend %flexbox;
+    gap: 2rem;
+    margin-block-end: 12rem;
+
+    li a {
+      &:link,
+      &:visited {
+        color: $color-white;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+      }
+
+      &:active,
+      &:hover {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .btn {
+    justify-self: center;
+    margin-block-end: 3.4rem;
+  }
+
+  small {
+    font-weight: 400;
+    opacity: 50.25%;
+    font-size: 1.5rem;
+  }
+}
