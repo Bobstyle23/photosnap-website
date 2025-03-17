@@ -1,8 +1,13 @@
 .footer {
-  @extend %grid;
   background-color: $color-black;
-  padding: 5.6rem 3.2rem;
-  color: $color-white;
+
+  &__content {
+    @extend %grid;
+    padding: 5.6rem 3.2rem;
+    color: $color-white;
+    max-width: 110.4rem;
+    margin-inline: auto;
+  }
 
   &__logo {
     margin-block-end: 3.2rem;
@@ -27,6 +32,7 @@
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
+        transition: opacity 0.3s ease;
       }
 
       &:active,
@@ -46,17 +52,19 @@
 
   small {
     font-weight: 400;
-    opacity: 50.25%;
+    opacity: 0.5;
     font-size: 1.5rem;
   }
 }
 
 @include respond-to($breakpoint-tablets) {
   .footer {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 6.4rem 4rem;
-    place-items: start;
-    row-gap: 3.2rem;
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 6.4rem 4rem;
+      place-items: start;
+      row-gap: 3.2rem;
+    }
 
     & * {
       margin-block-end: 0;
@@ -80,6 +88,53 @@
     small {
       grid-area: 3 / 2;
       justify-self: end;
+    }
+  }
+}
+
+@include respond-to($breakpoint-large-tablets) {
+  .footer {
+    height: 25rem;
+    &__content {
+      grid-template-columns: auto 1fr auto;
+      gap: 0;
+      height: 100%;
+    }
+
+    &__navigation {
+      grid-area: 1 / 2 / span 3 / 3;
+    }
+
+    &__navigation-list {
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-inline-start: 11rem;
+      margin-block-end: 0;
+
+      li a {
+        &:link,
+        &:visited {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__btn {
+      grid-area: 1 / 3;
+    }
+
+    small {
+      grid-area: 3 / 3;
+      align-self: end;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .footer {
+    &__content {
+      padding-inline: 0;
     }
   }
 }
