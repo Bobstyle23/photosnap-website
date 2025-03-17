@@ -27,7 +27,9 @@
   mask: url($icon) no-repeat center;
   -webkit-mask: url($icon) no-repeat center;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background: $gradient;
   }
 }

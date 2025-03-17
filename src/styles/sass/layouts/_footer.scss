@@ -13,15 +13,18 @@
     margin-block-end: 3.2rem;
   }
 
-  &__logos {
+  &__logos,
+  &__navigation-list {
     @extend %flexbox;
+  }
+
+  &__logos {
     flex-flow: row nowrap;
     gap: 1.4rem;
     margin-block-end: 5rem;
   }
 
   &__navigation-list {
-    @extend %flexbox;
     gap: 2rem;
     margin-block-end: 12rem;
 
