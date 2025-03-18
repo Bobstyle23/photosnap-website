@@ -1,4 +1,5 @@
 .features {
+  max-width: 111rem;
   .hero {
     &__info {
       background-color: $color-black;
@@ -29,6 +30,30 @@
   }
 
   &__full {
+    @extend %grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(31rem, 100%), max-content)
+    );
     padding: 6.4rem 3.2rem;
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .features {
+    &__full {
+      padding: 11.2rem 4rem;
+      gap: 7.2rem 1.1rem;
+    }
+  }
+}
+
+/* @include respond-to($breakpoint-desktops) { */
+/*   .features { */
+/*     &__full { */
+/*       padding-inline: 0; */
+/*       padding-block: 16rem; */
+/*       gap: 10.4rem 3rem; */
+/*     } */
+/*   } */
+/* } */
