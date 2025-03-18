@@ -1,12 +1,10 @@
 .intro {
   @extend %grid;
 
-  /* NOTE: selects 1st and 3rd articles inside intro and changes the order */
   &:nth-of-type(odd) article {
     order: 1;
   }
 
-  /* NOTE: selects first article inside intro and changes the background color */
   &:first-of-type article {
     background-color: $color-black;
     color: $color-white;
