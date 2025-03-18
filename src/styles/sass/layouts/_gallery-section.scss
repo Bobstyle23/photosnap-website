@@ -1,9 +1,6 @@
 .gallery {
   @extend %grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(36rem, 100%), max-content)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), auto));
 
   &__container {
     position: relative;
