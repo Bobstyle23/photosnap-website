@@ -1,4 +1,13 @@
 .hero {
+  position: relative;
+
+  &__image {
+    img {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
   &__info {
     @extend %flexbox;
     align-items: flex-start;
@@ -44,5 +53,39 @@
     padding: 0;
     width: 18.4rem;
     height: 1.6rem;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .hero {
+    &__info {
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      transform: translateY(-50%);
+      left: 4rem;
+      background: transparent;
+      max-width: 38.7rem;
+      height: 40.6rem;
+      padding: 0;
+    }
+
+    &__subtitle {
+      margin-block-end: 0.8rem;
+    }
+
+    &__title {
+      font-size: 4rem;
+      line-height: calc(4.8 / 4);
+      letter-spacing: 0.417rem;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .hero {
+    &__info {
+      left: 11.2rem;
+    }
   }
 }
