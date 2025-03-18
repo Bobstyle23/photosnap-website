@@ -21,6 +21,12 @@
   &:first-of-type article {
     background-color: $color-black;
     color: $color-white;
+    position: relative;
+
+    &::before {
+      top: 0;
+      @include decoration(to left bottom, 12.8rem, 0.6rem, 180deg);
+    }
   }
 
   &__info {

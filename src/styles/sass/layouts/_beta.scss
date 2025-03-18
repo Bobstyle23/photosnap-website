@@ -11,19 +11,9 @@
   min-height: 28rem;
 
   &::before {
-    content: "";
-    position: absolute;
+    @include decoration(to left bottom, 12.8rem, 0.6rem, 180deg);
     top: 0;
     left: 3.2rem;
-    width: 12.8rem;
-    height: 0.6rem;
-    background: linear-gradient(
-      90deg,
-      rgba(#ffc593, 1) 0%,
-      rgba(#bc7198, 1) 52%,
-      rgba(#5a77ff, 1) 100%
-    );
-    rotate: 180deg;
   }
 
   &__content {

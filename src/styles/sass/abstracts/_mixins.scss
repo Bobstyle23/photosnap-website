@@ -12,13 +12,15 @@
 }
 
 @mixin decoration($direction, $width, $height, $rotate: 0) {
+  position: absolute;
+  content: "";
   width: $width;
   height: $height;
   background: linear-gradient(
     $direction,
-    rgba(255, 197, 147, 1) 0%,
-    rgba(188, 113, 152, 1) 52%,
-    rgba(90, 119, 255, 1) 100%
+    rgba(#ffc593, 1) 0%,
+    rgba(#bc7198, 1) 52%,
+    rgba(#5a77ff, 1) 100%
   );
   rotate: $rotate;
 }
