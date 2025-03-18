@@ -1,5 +1,34 @@
 .features {
   .hero {
-    background-color: red;
+    &__info {
+      background-color: $color-black;
+      color: $color-white;
+      padding: 7.2rem 2.8rem;
+      position: relative;
+
+      &::before {
+        top: 0;
+        @include decoration(to left bottom, 12.8rem, 0.6rem, 180deg);
+      }
+    }
+
+    &__title {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      line-height: calc(4 / 3.2);
+      letter-spacing: 0.333rem;
+      margin-block-end: 1.6rem;
+    }
+
+    &__description {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: calc(2.5 / 1.5);
+      opacity: 0.6;
+    }
+  }
+
+  &__full {
+    padding: 6.4rem 3.2rem;
   }
 }
