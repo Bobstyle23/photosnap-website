@@ -5,6 +5,17 @@
 
   &__container {
     position: relative;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-2rem);
+    }
+
+    &:is(:hover)::after {
+      bottom: -0.2rem;
+      @include decoration(to left bottom, 100%, 0.6rem, 180deg);
+    }
   }
 
   &__info {
