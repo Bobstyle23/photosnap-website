@@ -7,8 +7,63 @@
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    @@include('./header.html') @@include("./beta.html")
-    @@include("./footer.html")
+    @@include('./header.html')
+    <div class="overlay"></div>
+    <main class="main main__features">
+      <section class="features hero">
+        <picture class="hero__image">
+          <source
+            srcset="
+              ./img/stories/desktop/moon-of-appalacia.webp,
+              ./img/stories/desktop/moon-of-appalacia@2x.webp 2x,
+              ./img/stories/desktop/moon-of-appalacia@3x.webp 3x
+            "
+            media="(min-width: 75em)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./img/stories/tablet/moon-of-appalacia-tablet.webp,
+              ./img/stories/tablet/moon-of-appalacia-tablet@2x.webp 2x,
+              ./img/stories/tablet/moon-of-appalacia-tablet@3x.webp 3x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="./img/stories/mobile/moon-of-appalacia-mobile.webp"
+            srcset="
+              ./img/stories/mobile/moon-of-appalacia-mobile@2x.webp 2x,
+              ./img/stories/mobile/moon-of-appalacia-mobile@3x.webp 3x
+            "
+            alt=""
+          />
+        </picture>
+        <article class="hero__info">
+          <h3 class="hero__subtitle">Last month's featured story</h3>
+          <h1 class="hero__title">HAZY FULL MOON OF APPALACHIA</h1>
+          <small class="hero__date"
+            >March 2nd 2020
+            <span class="hero__author">by John Appleseed</span></small
+          >
+          <p class="hero__description">
+            The dissected plateau area, while not actually made up of geological
+            mountains, is popularly called "mountains," especially in eastern
+            Kentucky and West Virginia, and while the ridges are not high, the
+            terrain is extremely rugged.
+          </p>
+          <a href="#" class="btn btn__link btn__link--white hero__link"
+            >Read the story
+            <svg class="icon icon__arrow icon__arrow--white">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+          ></a>
+        </article>
+      </section>
+    </main>
+
+    @@include("./beta.html") @@include("./footer.html")
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

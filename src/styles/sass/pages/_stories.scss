@@ -1,91 +1,97 @@
-.hero {
+.stories {
   position: relative;
 
-  &__image {
-    img {
-      width: 100%;
-      max-width: none;
+  .hero {
+    &__image {
+      img {
+        width: 100%;
+        max-width: none;
+      }
     }
-  }
 
-  &__info {
-    @extend %flexbox;
-    align-items: flex-start;
-    gap: 1.6rem;
-    background-color: $color-black;
-    color: $color-white;
-    padding: 4.8rem 2.8rem;
-  }
+    &__info {
+      @extend %flexbox;
+      align-items: flex-start;
+      gap: 1.6rem;
+      background-color: $color-black;
+      color: $color-white;
+      padding: 4.8rem 2.8rem;
+    }
 
-  &__subtitle {
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-  }
+    &__subtitle {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+    }
 
-  &__title {
-    font-size: 3.2rem;
-    line-height: 1.25;
-    letter-spacing: 0.333rem;
-  }
+    &__title {
+      font-size: 3.2rem;
+      line-height: 1.25;
+      letter-spacing: 0.333rem;
+    }
 
-  &__date {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: rgba($color: #fff, $alpha: 0.75);
-    margin-block-end: 0.8rem;
-  }
+    &__date {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: rgba($color: #fff, $alpha: 0.75);
+      margin-block-end: 0.8rem;
+    }
 
-  &__author {
-    color: rgba($color: #fff, $alpha: 1);
-  }
+    &__author {
+      color: rgba($color: #fff, $alpha: 1);
+    }
 
-  &__description {
-    font-size: 1.5rem;
-    line-height: calc(2.5 / 1.5);
-    font-weight: 400;
-    text-wrap: auto;
-    opacity: 0.6;
-    margin-block-end: 0.8rem;
-  }
+    &__description {
+      font-size: 1.5rem;
+      line-height: calc(2.5 / 1.5);
+      font-weight: 400;
+      text-wrap: auto;
+      opacity: 0.6;
+      margin-block-end: 0.8rem;
+    }
 
-  &__link {
-    padding: 0;
-    width: 18.4rem;
-    height: 1.6rem;
+    &__link {
+      padding: 0;
+      width: 18.4rem;
+      height: 1.6rem;
+    }
   }
 }
 
 @include respond-to($breakpoint-tablets) {
-  .hero {
-    &__info {
-      position: absolute;
-      top: 50%;
-      bottom: 50%;
-      transform: translateY(-50%);
-      left: 4rem;
-      background: transparent;
-      max-width: 38.7rem;
-      height: 40.6rem;
-      padding: 0;
-    }
+  .stories {
+    .hero {
+      &__info {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+        left: 4rem;
+        background: transparent;
+        max-width: 38.7rem;
+        height: 40.6rem;
+        padding: 0;
+      }
 
-    &__subtitle {
-      margin-block-end: 0.8rem;
-    }
+      &__subtitle {
+        margin-block-end: 0.8rem;
+      }
 
-    &__title {
-      font-size: 4rem;
-      line-height: calc(4.8 / 4);
-      letter-spacing: 0.417rem;
+      &__title {
+        font-size: 4rem;
+        line-height: calc(4.8 / 4);
+        letter-spacing: 0.417rem;
+      }
     }
   }
 }
 
 @include respond-to($breakpoint-desktops) {
-  .hero {
-    &__info {
-      left: 11.2rem;
+  .stories {
+    .hero {
+      &__info {
+        left: 11.2rem;
+      }
     }
   }
 }
