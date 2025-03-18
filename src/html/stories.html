@@ -7,7 +7,467 @@
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    @@include("./header.html") @@include("./footer.html")
+    @@include("./header.html")
+    <div class="overlay"></div>
+    <main class="main main__stories">
+      <section class="hero">
+        <picture class="hero__image">
+          <source
+            srcset="
+              ./img/stories/desktop/moon-of-appalacia.webp,
+              ./img/stories/desktop/moon-of-appalacia@2x.webp 2x,
+              ./img/stories/desktop/moon-of-appalacia@3x.webp 3x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./img/stories/tablet/moon-of-appalacia-tablet.webp,
+              ./img/stories/tablet/moon-of-appalacia-tablet@2x.webp 2x,
+              ./img/stories/tablet/moon-of-appalacia-tablet@3x.webp 3x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="./img/stories/mobile/moon-of-appalacia-mobile.webp"
+            srcset="
+              ./img/stories/mobile/moon-of-appalacia-mobile@2x.webp 2x,
+              ./img/stories/mobile/moon-of-appalacia-mobile@3x.webp 3x
+            "
+            alt=""
+          />
+        </picture>
+        <article class="hero__info">
+          <h3 class="hero__subtitle">Last month's featured story</h3>
+          <h1 class="hero__title">HAZY FULL MOON OF APPALACHIA</h1>
+          <small class="hero__date"
+            >March 2nd 2020
+            <span class="hero__author">by John Appleseed</span></small
+          >
+          <p class="hero__description">
+            The dissected plateau area, while not actually made up of geological
+            mountains, is popularly called "mountains," especially in eastern
+            Kentucky and West Virginia, and while the ridges are not high, the
+            terrain is extremely rugged.
+          </p>
+          <a href="#" class="btn btn__link btn__link--white hero__link"
+            >Read the story
+            <svg class="icon icon__arrow icon__arrow--white">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+          ></a>
+        </article>
+      </section>
+
+      <section class="gallery">
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/mountains.png,
+                ./img/stories/desktop/mountains@2x.png 2x,
+                ./img/stories/desktop/mountains@3x.png 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/mountains-tablet.png,
+                ./img/stories/tablet/mountains-tablet@2x.png 2x,
+                ./img/stories/tablet/mountains-tablet@3x.png 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/mountains-mobile.webp"
+              srcset="
+                ./img/stories/mobile/mountains-mobile@2x.webp 2x,
+                ./img/stories/mobile/mountains-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">April 16th 2020</small>
+            <h3 class="gallery__title">The Mountains</h3>
+            <p class="gallery__author">by John Appleseed</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/cityscapes.webp,
+                ./img/stories/desktop/cityscapes@2x.webp 2x,
+                ./img/stories/desktop/cityscapes@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/stories/tablet/cityscapes-tablet.webp,
+                ./img/stories/tablet/cityscapes-tablet@2x.webp 2x,
+                ./img/stories/tablet/cityscapes-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/cityscapes-mobile.webp"
+              srcset="
+                ./img/stories/mobile/cityscapes-mobile@2x.webp 2x,
+                ./img/stories/mobile/cityscapes-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">April 14th 2020</small>
+            <h3 class="gallery__title">Sunset Cityscapes</h3>
+            <p class="gallery__author">by Benjamin Cruz</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/18-days-voyage.webp,
+                ./img/stories/desktop/18-days-voyage@2x.webp 2x,
+                ./img/stories/desktop/18-days-voyage@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/18-days-voyage-tablet.webp,
+                ./img/stories/tablet/18-days-voyage-tablet@2x.webp 2x,
+                ./img/stories/tablet/18-days-voyage-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/18-days-voyage-mobile.webp"
+              srcset="
+                ./img/stories/mobile/18-days-voyage-mobile@2x.webp 2x,
+                ./img/stories/mobile/18-days-voyage-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">April 11th 2020</small>
+            <h3 class="gallery__title">18 Days Voyage</h3>
+            <p class="gallery__author">by Alexei Borodin</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" />
+              </svg>
+            </a>
+          </figcaption>
+        </figure>
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/architecturals.webp,
+                ./img/stories/desktop/architecturals@2x.webp 2x,
+                ./img/stories/desktop/architecturals@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/architecturals-tablet.webp,
+                ./img/stories/tablet/architecturals-tablet@2x.webp 2x,
+                ./img/stories/tablet/architecturals-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/architecturals-mobile.webp"
+              srcset="
+                ./img/stories/mobile/architecturals-mobile@2x.webp 2x,
+                ./img/stories/mobile/architecturals-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">April 9th 2020</small>
+            <h3 class="gallery__title">Architecturals</h3>
+            <p class="gallery__author">by Samantha Brooke</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/world-tour.webp,
+                ./img/stories/desktop/world-tour@2x.webp 2x,
+                ./img/stories/desktop/world-tour@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/world-tour-tablet.webp,
+                ./img/stories/tablet/world-tour-tablet@2x.webp 2x,
+                ./img/stories/tablet/world-tour-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/world-tour-mobile.webp"
+              srcset="
+                ./img/stories/mobile/world-tour-mobile@2x.webp 2x,
+                ./img/stories/mobile/world-tour-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">April 7th 2020</small>
+            <h3 class="gallery__title">World Tour 2019</h3>
+            <p class="gallery__author">by Timothy Wagner</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/unforeseen-corners.webp,
+                ./img/stories/desktop/unforeseen-corners@2x.webp 2x,
+                ./img/stories/desktop/unforeseen-corners@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/unforeseen-corners-tablet.webp,
+                ./img/stories/tablet/unforeseen-corners-tablet@2x.webp 2x,
+                ./img/stories/tablet/unforeseen-corners-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/unforeseen-corners-mobile.webp"
+              srcset="
+                ./img/stories/mobile/unforeseen-corners-mobile@2x.webp 2x,
+                ./img/stories/mobile/unforeseen-corners-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">April 3rd 2020</small>
+            <h3 class="gallery__title">Unforeseen Corners</h3>
+            <p class="gallery__author">by William Malcolm</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/king-on-africa.webp,
+                ./img/stories/desktop/king-on-africa@2x.webp 2x,
+                ./img/stories/desktop/king-on-africa@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/king-on-africa-tablet.webp,
+                ./img/stories/tablet/king-on-africa-tablet@2x.webp 2x,
+                ./img/stories/tablet/king-on-africa-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/king-on-africa-mobile.webp"
+              srcset="
+                ./img/stories/mobile/king-on-africa-mobile@2x.webp 2x,
+                ./img/stories/mobile/king-on-africa-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">March 29th 2020</small>
+            <h3 class="gallery__title">King on Africa: Part Ⅱ</h3>
+            <p class="gallery__author">by Tim Hillenburg</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/trip-to-nowhere.webp,
+                ./img/stories/desktop/trip-to-nowhere@2x.webp 2x,
+                ./img/stories/desktop/trip-to-nowhere@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/trip-to-nowhere-tablet.webp,
+                ./img/stories/tablet/trip-to-nowhere-tablet@2x.webp 2x,
+                ./img/stories/tablet/trip-to-nowhere-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/trip-to-nowhere-mobile.webp"
+              srcset="
+                ./img/stories/mobile/trip-to-nowhere-mobile@2x.webp 2x,
+                ./img/stories/mobile/trip-to-nowhere-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">March 21st 2020</small>
+            <h3 class="gallery__title">The Trip to Nowhere</h3>
+            <p class="gallery__author">by Felicia Rourke</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery__container">
+          <picture class="gallery__image">
+            <source
+              srcset="
+                ./img/stories/desktop/rage-of-the-sea.webp,
+                ./img/stories/desktop/rage-of-the-sea@2x.webp 2x,
+                ./img/stories/desktop/rage-of-the-sea@3x.webp 3x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./img/stories/tablet/rage-of-the-sea-tablet.webp,
+                ./img/stories/tablet/rage-of-the-sea-tablet@2x.webp 2x,
+                ./img/stories/tablet/rage-of-the-sea-tablet@3x.webp 3x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+
+            <img
+              loading="lazy"
+              src="./img/stories/mobile/rage-of-the-sea-mobile.webp"
+              srcset="
+                ./img/stories/mobile/rage-of-the-sea-mobile@2x.webp 2x,
+                ./img/stories/mobile/rage-of-the-sea-mobile@3x.webp 3x
+              "
+              alt=""
+            />
+          </picture>
+          <figcaption class="gallery__info">
+            <small class="gallery__date">March 19th 2020</small>
+            <h3 class="gallery__title">Rage of The Sea</h3>
+            <p class="gallery__author">by Mohammed Abdul</p>
+            <div class="separator"></div>
+            <a href="#" class="btn btn__link btn__link--white gallery__link"
+              >Read Story
+              <svg class="icon icon__arrow icon__arrow--white">
+                <use href="./img/svgsprite/sprite.symbol.svg#arrow" /></svg
+            ></a>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    @@include("./footer.html")
+
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>
