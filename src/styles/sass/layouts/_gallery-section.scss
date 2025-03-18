@@ -69,3 +69,12 @@
     padding: 0;
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .gallery__image {
+    img {
+      width: 38.4rem;
+      height: 50rem;
+    }
+  }
+}
