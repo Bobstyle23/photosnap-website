@@ -46,7 +46,51 @@
     </svg>
   </button>
 </header>
- <section class="beta">
+
+    <div class="overlay"></div>
+    <main class="main main__pricing">
+      <section class="pricing hero">
+        <picture class="hero__image">
+          <source
+            srcset="
+              ./img/pricing/desktop/hero.webp,
+              ./img/pricing/desktop/hero@2x.webp 2x,
+              ./img/pricing/desktop/hero@3x.webp 3x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./img/pricing/tablet/hero-tablet.webp,
+              ./img/pricing/tablet/hero-tablet@2x.webp 2x,
+              ./img/pricing/tablet/hero-tablet@3x.webp 3x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="./img/pricing/mobile/hero-mobile.webp"
+            srcset="
+              ./img/pricing/mobile/hero-mobile@2x.webp 2x,
+              ./img/pricing/mobile/hero-mobile@3x.webp 3x
+            "
+            alt=""
+          />
+        </picture>
+        <article class="hero__info">
+          <h1 class="hero__title">Pricing</h1>
+          <p class="hero__description">
+            Create a&#160;your stories, Photosnap is&#160;a&#160;platform for photographers and
+            visual storytellers. It&#8217;s the simple way to&#160;create and share your
+            photos.
+          </p>
+        </article>
+      </section>
+    </main>
+    <section class="beta">
   <div class="beta__content">
     <h2 class="beta__title">We&#8217;re in&#160;beta. Get your invite today!</h2>
     <a href="#" class="btn btn__link btn__link--white"
@@ -57,8 +101,7 @@
     </a>
   </div>
 </section>
-
-    <footer class="footer">
+ <footer class="footer">
   <div class="footer__content">
     <a href="/">
       <img class="footer__logo" src="./img/svgicons/logo-light.svg" alt="" />

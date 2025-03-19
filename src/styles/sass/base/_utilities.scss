@@ -23,3 +23,90 @@
     opacity 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
 }
+
+.hero {
+  @extend %grid;
+
+  &__info {
+    @extend %flexbox;
+    align-items: flex-start;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 7.2rem 2.8rem;
+    position: relative;
+
+    &::before {
+      top: 0;
+      @include decoration(to left bottom, 12.8rem, 0.6rem, 180deg);
+    }
+  }
+
+  &__image {
+    img {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    line-height: calc(4 / 3.2);
+    letter-spacing: 0.333rem;
+    margin-block-end: 1.6rem;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: calc(2.5 / 1.5);
+    opacity: 0.6;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .hero {
+    grid-template-columns: 1fr auto;
+    align-items: stretch;
+
+    &__image {
+      order: 1;
+    }
+
+    &__info {
+      padding-inline: 5.4rem;
+
+      &::before {
+        left: 0;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(50%);
+        width: 0.6rem;
+        height: 14.4rem;
+      }
+    }
+
+    &__title {
+      font-size: 4rem;
+      line-height: calc(4.8 / 4);
+      letter-spacing: 0.417rem;
+    }
+  }
+}
+
+@include respond-to($breakpoint-large-tablets) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .hero {
+    grid-template-columns: 1fr auto;
+
+    &__info {
+      padding-block: 0;
+      padding-inline: 11.2rem;
+    }
+  }
+}
