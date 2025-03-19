@@ -1,9 +1,10 @@
 .features {
-  max-width: 111rem;
   @extend %grid;
 
   .hero {
     &__info {
+      @extend %flexbox;
+      align-items: flex-start;
       background-color: $color-black;
       color: $color-white;
       padding: 7.2rem 2.8rem;
@@ -57,6 +58,25 @@
       &__image {
         order: 1;
       }
+
+      &__info {
+        padding-inline: 5.4rem;
+
+        &::before {
+          left: 0;
+          top: 50%;
+          bottom: 50%;
+          transform: translateY(50%);
+          width: 0.6rem;
+          height: 14.4rem;
+        }
+      }
+
+      &__title {
+        font-size: 4rem;
+        line-height: calc(4.8 / 4);
+        letter-spacing: 0.417rem;
+      }
     }
 
     &__full {
@@ -66,8 +86,22 @@
   }
 }
 
+@include respond-to($breakpoint-large-tablets) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @include respond-to($breakpoint-desktops) {
   .features {
+    grid-template-columns: 1fr auto;
+
+    .hero {
+      &__info {
+        padding-block: 0;
+        padding-inline: 11.2rem;
+      }
+    }
     &__full {
       padding-inline: 0;
       padding-block: 16rem;
