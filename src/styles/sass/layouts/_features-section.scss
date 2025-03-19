@@ -48,12 +48,12 @@
 @include respond-to($breakpoint-desktops) {
   .section__features {
     padding-inline: 0;
-
     article {
       display: grid;
       place-items: center;
       grid-template-rows: subgrid;
       grid-row: span 3;
+      row-gap: 0;
     }
   }
 }

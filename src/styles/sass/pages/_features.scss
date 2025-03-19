@@ -1,5 +1,7 @@
 .features {
   max-width: 111rem;
+  @extend %grid;
+
   .hero {
     &__info {
       background-color: $color-black;
@@ -10,6 +12,13 @@
       &::before {
         top: 0;
         @include decoration(to left bottom, 12.8rem, 0.6rem, 180deg);
+      }
+    }
+
+    &__image {
+      img {
+        max-width: none;
+        width: 100%;
       }
     }
 
@@ -41,6 +50,15 @@
 
 @include respond-to($breakpoint-tablets) {
   .features {
+    grid-template-columns: 1fr auto;
+    align-items: stretch;
+
+    .hero {
+      &__image {
+        order: 1;
+      }
+    }
+
     &__full {
       padding: 11.2rem 4rem;
       gap: 7.2rem 1.1rem;
@@ -48,12 +66,11 @@
   }
 }
 
-/* @include respond-to($breakpoint-desktops) { */
-/*   .features { */
-/*     &__full { */
-/*       padding-inline: 0; */
-/*       padding-block: 16rem; */
-/*       gap: 10.4rem 3rem; */
-/*     } */
-/*   } */
-/* } */
+@include respond-to($breakpoint-desktops) {
+  .features {
+    &__full {
+      padding-inline: 0;
+      padding-block: 16rem;
+    }
+  }
+}
