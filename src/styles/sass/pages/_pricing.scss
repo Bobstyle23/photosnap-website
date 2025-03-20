@@ -1,0 +1,79 @@
+.prices {
+  @extend %grid;
+  margin-inline: 2.8rem;
+  margin-block: 6.4rem;
+  row-gap: 4rem;
+
+  &__toggle {
+    @extend %flexbox;
+    flex-flow: row nowrap;
+    gap: 3.2rem;
+  }
+
+  &__select {
+    font-size: 1.8rem;
+    line-height: calc(2.5 / 1.8);
+
+    &--year {
+      opacity: 0.5;
+    }
+  }
+
+  &__category {
+    @extend %grid;
+    row-gap: 2.4rem;
+  }
+
+  &__box {
+    @extend %grid;
+    padding: 5.6rem 2.2rem 4rem;
+    text-align: center;
+    background-color: $color-grey;
+
+    &--pro {
+      position: relative;
+      background-color: $color-black;
+      color: $color-white;
+
+      &::before {
+        top: 0;
+        @include decoration(to bottom, 100%, 0.6rem, 180deg);
+      }
+    }
+  }
+
+  &__type {
+    font-size: 2.4rem;
+    line-height: calc(2.5 / 2.4);
+    margin-block-end: 1.8rem;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: calc(2.5 / 1.5);
+    opacity: 0.6;
+    margin-block-end: 4rem;
+  }
+
+  &__value {
+    font-size: 4rem;
+    line-height: calc(4.8 / 4);
+    letter-spacing: 0.417rem;
+  }
+
+  &__period {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: calc(2.5 / 1.5);
+    font-weight: 400;
+    opacity: 0.6;
+    margin-block-end: 4rem;
+  }
+
+  &__btn {
+    display: block;
+    width: 24.5rem;
+    height: 4rem;
+  }
+}
