@@ -11,16 +11,18 @@ const yearly = document.querySelector(".prices__select--year");
 const [basic, pro, business] = document.getElementsByClassName("prices__value");
 const pricesPeriod = document.getElementsByClassName("prices__period");
 
+const yearlyPrices = ["$190.00", "$390.00", "$990.00"];
+const monthlyPrices = ["$19.00", "$39.00", "$99.00"];
+
 checkbox.addEventListener("change", (e) => {
   const isChecked = e.target.checked;
+
   if (isChecked) {
     monthly.style.opacity = 0.6;
     yearly.style.opacity = 1;
 
     [basic.textContent, pro.textContent, business.textContent] = [
-      "$190.00",
-      "$390.00",
-      "$990.00",
+      ...yearlyPrices,
     ];
     for (let period of pricesPeriod) {
       period.textContent = "per year";
@@ -29,9 +31,7 @@ checkbox.addEventListener("change", (e) => {
     monthly.style.opacity = 1;
     yearly.style.opacity = 0.6;
     [basic.textContent, pro.textContent, business.textContent] = [
-      "$19.00",
-      "$39.00",
-      "$99.00",
+      ...monthlyPrices,
     ];
     for (let period of pricesPeriod) {
       period.textContent = "per month";
