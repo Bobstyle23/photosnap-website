@@ -1,9 +1,9 @@
 .beta {
   position: relative;
   background-image: image-set(
-    url("../../../img/shared/mobile/bg-beta-mobile.webp") 1x,
-    url("../../../img/shared/mobile/bg-beta-mobile@2x.webp") 2x,
-    url("../../../img/shared/mobile/bg-beta-mobile@3x.webp") 3x
+    url("../img/shared/mobile/bg-beta-mobile.webp") 1x,
+    url("../img/shared/mobile/bg-beta-mobile@2x.webp") 2x,
+    url("../img/shared/mobile/bg-beta-mobile@3x.webp") 3x
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -65,17 +65,17 @@
     }
 
     background-image: image-set(
-      url("../../../img/shared/tablet/bg-beta-tablet.webp") 1x,
-      url("../../../img/shared/tablet/bg-beta-tablet@2x.webp") 2x,
-      url("../../../img/shared/tablet/bg-beta-tablet@3x.webp") 3x
+      url("../img/shared/tablet/bg-beta-tablet.webp") 1x,
+      url("../img/shared/tablet/bg-beta-tablet@2x.webp") 2x,
+      url("../img/shared/tablet/bg-beta-tablet@3x.webp") 3x
     );
   }
 
   @include respond-to($breakpoint-large-tablets) {
     background-image: image-set(
-      url("../../../img/shared/desktop/bg-beta.webp") 1x,
-      url("../../../img/shared/desktop/bg-beta@2x.webp") 2x,
-      url("../../../img/shared/desktop/bg-beta@3x.webp") 3x
+      url("../img/shared/desktop/bg-beta.webp") 1x,
+      url("../img/shared/desktop/bg-beta@2x.webp") 2x,
+      url("../img/shared/desktop/bg-beta@3x.webp") 3x
     );
   }
 
