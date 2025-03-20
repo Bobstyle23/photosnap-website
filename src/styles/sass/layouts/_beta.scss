@@ -78,4 +78,10 @@
       url("../../../img/shared/desktop/bg-beta@3x.webp") 3x
     );
   }
+
+  @include respond-to($breakpoint-desktops) {
+    &__content {
+      padding-inline: 0;
+    }
+  }
 }
