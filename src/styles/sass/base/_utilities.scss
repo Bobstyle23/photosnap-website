@@ -65,7 +65,7 @@
 
 @include respond-to($breakpoint-tablets) {
   .hero {
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr minmax(0, auto);
     align-items: stretch;
 
     &__image {
@@ -101,7 +101,7 @@
 
 @include respond-to($breakpoint-desktops) {
   .hero {
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr minmax(0, auto);
 
     &__info {
       padding-block: 0;

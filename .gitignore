@@ -4,4 +4,3 @@ webpack.config.js
 gulpfile.js
 package.json
 yarn.lock
-gulp
