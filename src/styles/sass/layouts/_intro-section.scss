@@ -59,11 +59,11 @@
 
 @include respond-to($breakpoint-tablets) {
   .intro {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: max-content 1fr;
     align-items: stretch;
 
     &:nth-of-type(odd) {
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr max-content;
     }
 
     &:nth-of-type(odd) article {

@@ -65,8 +65,7 @@
       transform: translateY(-50%);
       left: 4rem;
       background: transparent;
-      max-width: 38.7rem;
-      height: 40.6rem;
+      min-height: 40.6rem;
       padding: 0;
     }
 
@@ -85,6 +84,7 @@
 @include respond-to($breakpoint-desktops) {
   .stories {
     &__info {
+      max-width: 38.7rem;
       left: 11.2rem;
     }
   }
